@@ -1,7 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Arial, sans-serif;
+	font-family: "Libre Franklin", sans-serif;
+	font-weight: 300;
 }
 
 #course-title {
@@ -29,7 +30,7 @@ nav {
 
 nav a {
 	display: block;
-	color: #fff;
+	color: #0b419e;
 	text-align: center;
 	text-decoration: none;
 	font-size: 1.5rem;
@@ -43,6 +44,11 @@ h1 {
 	color: #484343;
 	text-align: center;
 	grid-column: 1 / -1;
+}
+
+h1,
+h2 {
+	font-weight: 500;
 }
 
 nav ul {
@@ -73,7 +79,7 @@ main {
 }
 
 .card-header {
-	background-color: #1b4d72; /* Dark blue from your image */
+	background-color: #333;
 	color: white;
 	margin: 0;
 	padding: 10px;
@@ -88,7 +94,7 @@ main {
 
 /* About Me Content Layout */
 .profile-img {
-	float: right; /* Makes text wrap around the image */
+	float: right;
 	width: 150px;
 	height: auto;
 	margin-left: 15px;
@@ -96,7 +102,7 @@ main {
 	border-radius: 10px;
 }
 
-/* Location Section inside the card */
+/* Ghana, Tema */
 .location-section {
 	clear: both; /* Stops the float from affecting this part */
 	margin-top: 20px;
@@ -132,4 +138,19 @@ main {
 .card-content a {
 	color: #0000ee;
 	text-decoration: underline;
+}
+
+footer {
+	text-align: center;
+	padding: 10px 0;
+	background-color: #f0f0f0;
+	margin-top: 20px;
+	color: #333;
+}
+
+footer .last-modified {
+	font-size: 0.9rem;
+	color: #0b419e;
+	margin-top: 5px;
+	font-weight: bold;
 }
