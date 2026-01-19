@@ -1,0 +1,135 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+#course-title {
+	display: block;
+	font-size: 2rem;
+	color: #333;
+	text-align: center;
+	background-color: #f0f0f0;
+	padding: 20px;
+}
+
+nav {
+	margin: 0;
+	padding: 1px 0;
+	height: 3rem;
+	background-color: burlywood;
+}
+
+.navigation {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+nav a:hover {
+	color: #333;
+}
+
+h1 {
+	color: #484343;
+	text-align: center;
+	grid-column: 1 / -1;
+}
+
+nav ul {
+	display: flex;
+}
+nav ul li {
+	flex: 1 0 auto;
+}
+
+main {
+	width: 90%;
+	margin: 20px auto;
+}
+.grid-container {
+	display: grid;
+
+	grid-template-columns: 2fr 1fr;
+	gap: 20px;
+}
+
+/* Cards */
+.card {
+	background-color: #fff;
+	border: 1px solid #333;
+	border-radius: 10px;
+	overflow: hidden; /* Keeps the header corners rounded */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+	background-color: #1b4d72; /* Dark blue from your image */
+	color: white;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	font-size: 1.2rem;
+	border-bottom: 1px solid #333;
+}
+
+.card-content {
+	padding: 20px;
+}
+
+/* About Me Content Layout */
+.profile-img {
+	float: right; /* Makes text wrap around the image */
+	width: 150px;
+	height: auto;
+	margin-left: 15px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+/* Location Section inside the card */
+.location-section {
+	clear: both; /* Stops the float from affecting this part */
+	margin-top: 20px;
+	text-align: center;
+}
+
+.location-title {
+	margin-bottom: 5px;
+}
+
+.location-details {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	text-align: left;
+}
+
+.flag {
+	width: 100px;
+	height: auto;
+}
+
+/* List Styling */
+.card-content ul {
+	list-style-type: disc;
+	padding-left: 20px;
+}
+
+.card-content ul li {
+	margin-bottom: 10px;
+}
+
+.card-content a {
+	color: #0000ee;
+	text-decoration: underline;
+}
