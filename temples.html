@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Temple Album - Emmanuel Asamoah Adjei</title>
+		<meta
+			name="description"
+			content="WDD131: Dynamic Web Fundamentals - Temple Album Project"
+		/>
+		<meta name="author" content="Emmanuel Asamoah Adjei" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="styles/temples.css" />
+		<link
+			rel="stylesheet"
+			href="styles/temples-large.css"
+			media="screen and (min-width: 800px)"
+		/>
+
+		<script src="scripts/getdates.js" defer></script>
+		<script src="scripts/temples.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>Temple Album</h1>
+			<button id="menu"></button>
+			<nav>
+				<ul class="navigation">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Old</a></li>
+					<li><a href="#">New</a></li>
+					<li><a href="#">Large</a></li>
+					<li><a href="#">Small</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<h2>Home</h2>
+			<div class="grid-container">
+				<figure>
+					<img
+						src="./images/temples/aba_temple.jpeg"
+						alt="Aba Nigeria Temple"
+						loading="lazy"
+					/>
+					<figcaption>Aba Nigeria Temple</figcaption>
+				</figure>
+				<figure>
+					<img
+						src="./images/temples/abidjan_temple.webp"
+						alt="Abidjan Ivory Coast Temple"
+						loading="lazy"
+					/>
+					<figcaption>Abidjan Ivory Coast Temple</figcaption>
+				</figure>
+				<figure>
+					<img
+						src="./images/temples/durban_temple.png"
+						alt="Durban South Africa Temple"
+						loading="lazy"
+					/>
+					<figcaption>Durban South Africa Temple</figcaption>
+				</figure>
+				<figure>
+					<img
+						src="./images/temples/johannesburg_temple.jpeg"
+						alt="Johannesburg South Africa Temple"
+						loading="lazy"
+					/>
+					<figcaption>Johannesburg South Africa Temple</figcaption>
+				</figure>
+				<figure>
+					<img
+						src="./images/temples/kinshasa_temple.jpeg"
+						alt="Kinshasa DR Congo Temple"
+						loading="lazy"
+					/>
+					<figcaption>Kinshasa DR Congo Temple</figcaption>
+				</figure>
+				<figure>
+					<img
+						src="./images/temples/logan_temple.jpeg"
+						alt="Logan Utah Temple"
+						loading="lazy"
+					/>
+					<figcaption>Logan Utah Temple</figcaption>
+				</figure>
+				<figure>
+					<img
+						src="./images/temples/nauvoo_temple.jpeg"
+						alt="Nauvoo Illinois Temple"
+						loading="lazy"
+					/>
+					<figcaption>Nauvoo Illinois Temple</figcaption>
+				</figure>
+				<figure>
+					<img
+						src="./images/temples/rome_temple.jpeg"
+						alt="Rome Italy Temple"
+						loading="lazy"
+					/>
+					<figcaption>Rome Italy Temple</figcaption>
+				</figure>
+				<figure>
+					<img
+						src="./images/temples/salt_lake_temple.jpeg"
+						alt="Salt Lake Temple"
+						loading="lazy"
+					/>
+					<figcaption>Salt Lake Temple</figcaption>
+				</figure>
+			</div>
+		</main>
+
+		<footer>
+			<p>
+				&copy;<span id="currentYear"></span> 😎 Emmanuel Asamoah Adjei 😎 Tema,
+				Ghana
+			</p>
+			<p class="last-modified">
+				Last Modification: <span id="lastModified"></span>
+			</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+/* Hide the Hamburger Button */
+#menu {
+	display: none;
+}
+
+/* Horizontal Navigation */
+.navigation {
+	display: flex !important; /* Force show on desktop */
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #001f3f;
+}
+
+.navigation li {
+	flex: 1;
+}
+
+.navigation li a {
+	border-top: none;
+}
+
+/* 3-Column Grid Layout */
+.grid-container {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+}
+
+header h1 {
+	padding: 1rem 0;
+}
+
+nav {
+	width: 60%;
+}
