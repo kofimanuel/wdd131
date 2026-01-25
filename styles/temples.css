@@ -68,6 +68,11 @@ header h1 {
 	color: #ffeb3b;
 }
 
+.navigation li a:hover {
+	background-color: #555;
+	color: gold;
+}
+
 /* --- Grid & Images --- */
 main {
 	padding: 1rem;
@@ -90,8 +95,9 @@ main h2 {
 figure {
 	margin: 0;
 	background-color: #f4f4f4;
-	padding: 10px;
+	padding: 12px;
 	border: 1px solid #ddd;
+	border-radius: 20px;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -99,6 +105,7 @@ figure img {
 	width: 100%;
 	height: auto;
 	display: block;
+	border-radius: 8px;
 }
 
 figcaption {
