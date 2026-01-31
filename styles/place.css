@@ -15,6 +15,7 @@ header {
 	background-color: var(--primary-red);
 	color: var(--primary-gold);
 	padding: 0.5rem;
+	border-bottom: 10px solid var(--primary-gold);
 }
 
 footer {
@@ -22,10 +23,6 @@ footer {
 	color: white;
 	text-align: center;
 	padding: 1rem;
-}
-
-header {
-	border-bottom: 10px solid var(--primary-gold);
 }
 
 .hero-container {
