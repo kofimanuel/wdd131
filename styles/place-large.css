@@ -1,0 +1,40 @@
+@media (min-width: 800px) {
+	.hero-container {
+		display: block;
+	}
+
+	.card {
+		position: absolute;
+		background-color: var(--overlay-white);
+		width: 250px;
+		text-align: left;
+		margin: 0;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	.weather-icon-svg {
+		display: none;
+	}
+
+	.card h2 {
+		justify-content: flex-start;
+		margin: -1.5rem -1.5rem 1rem -1.5rem;
+		padding-left: 1rem;
+	}
+
+	.weather-title::after {
+		content: " 🌥️";
+		font-size: 1.5rem;
+		margin-top: -0.8rem;
+	}
+
+	.data-card {
+		top: 40px;
+		left: 40px;
+	}
+
+	.weather-card {
+		bottom: 40px;
+		right: 40px;
+	}
+}
