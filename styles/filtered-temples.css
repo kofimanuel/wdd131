@@ -10,14 +10,37 @@ header {
 	color: white;
 	padding: 1rem;
 	text-align: center;
+	position: relative;
 }
 
-/* --- Navigation Styles --- */
+/* --- Hamburger Menu --- */
+#menu {
+	display: block;
+	font-size: 2rem;
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+	font-size: large;
+}
+
+/* --- Navigation  --- */
 .navigation {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	display: none; /* Hidden on mobile by default */
+	display: none;
 	background-color: #333;
 }
 
@@ -34,7 +57,23 @@ header {
 	text-align: center;
 }
 
+.navigation li a:hover {
+	background-color: #555;
+	color: gold;
+}
+
 /* --- Card Grid Styling --- */
+main {
+	padding: 1rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+main h2 {
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 0.5rem;
+}
+
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -53,7 +92,7 @@ header {
 	background-color: #001f3f;
 	color: white;
 	margin: 0;
-	padding: 10px;
+	padding: 10px 15px;
 	font-size: 1.2rem;
 }
 

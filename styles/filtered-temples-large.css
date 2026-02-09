@@ -1,7 +1,13 @@
 @media (min-width: 800px) {
+	:root {
+		background-color: #555;
+	}
 	body {
+		background-color: #f4f4f4;
+		font-family: "Libre Franklin", sans-serif;
 		width: 95%;
 		margin: 0 auto;
+		padding: 0;
 	}
 
 	/* Hide the Hamburger Button on Desktop */
@@ -29,6 +35,10 @@
 
 	.navigation li a {
 		border-top: none;
+	}
+	.navigation li a:hover {
+		color: gold;
+		background-color: transparent;
 	}
 
 	/* 3-Column Grid Layout for Temple Cards */

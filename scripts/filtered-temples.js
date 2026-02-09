@@ -1,4 +1,4 @@
-// 1. Maintain your Hamburger Menu Logic
+// Hamburger Menu
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -8,7 +8,7 @@ hamButton.addEventListener('click', () => {
 });
 
 
-// 3. Temple Array (with your 3 additions)
+// Temples Array 
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -59,7 +59,6 @@ const temples = [
     area: 116642,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  // Adding 3 additional temple objects
   {
     templeName: "Accra Ghana",
     location: "Accra, Ghana",
@@ -83,7 +82,7 @@ const temples = [
   }
 ];
 
-// 4. Function to Build Cards
+// Function to Build Cards
 const container = document.querySelector("#temple-cards");
 
 function displayTemples(filteredList) {
@@ -104,10 +103,10 @@ function displayTemples(filteredList) {
   });
 }
 
-// 5. Initial Display
+// Initial Display
 displayTemples(temples);
 
-// 6. Filter Event Listeners
+// Filter Event Listeners
 document.querySelector("#old").addEventListener("click", () => {
   displayTemples(temples.filter(t => parseInt(t.dedicated.split(",")[0]) < 1900));
 });
