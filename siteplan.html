@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#AFA0A0" />
+		<!-- Check on this meta tag above later -->
+
+		<meta
+			name="description"
+			content="This is the site plan for Motiv8 Daily, a website designed to provide daily motivational quotes and advice. It includes the site name, purpose, user scenarios, color scheme, typography choices, and wireframes for both mobile and desktop layouts."
+		/>
+		<meta name="author" content="Emmanuel Asamoah Adjei" />
+		<link rel="stylesheet" href="styles/siteplan.css" />
+		<title>Motiv8 Daily - Emmanuel Asamoah Adjei</title>
+
+		<script src="scripts/getdates.js" defer></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="logo" aria-label="Motiv8 Daily logo">M8</div>
+			<h1>Motiv8 Daily - Website Plan</h1>
+		</header>
+
+		<main>
+			<section>
+				<h2>Site Name</h2>
+				<p><strong>Motiv8 Daily</strong></p>
+				<p>
+					I chose this name, Motiv8 Daily, because the site will share simple
+					daily motivation and short advice. It sounds positive and easy to
+					remember.
+				</p>
+			</section>
+
+			<section>
+				<h2>Site Purpose</h2>
+				<p>
+					The purpose of this website is to provide daily motivational quotes,
+					simple life advice, and short messages to help people stay focused and
+					encouraged. The site will use JavaScript to show random quotes, save
+					favorites to <code>localStorage</code>, and update messages daily.
+				</p>
+			</section>
+
+			<section>
+				<h2>Scenarios</h2>
+				<ul>
+					<li>
+						“Where can I find a quick motivational message to help me stay
+						focused today?”
+					</li>
+					<li>
+						“How can I save my favorite quote so I can read it again later?”
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Color Scheme</h2>
+				<div class="swatch">
+					<p>
+						<strong>Main Blue:</strong> <code>#0066cc</code> (headings, buttons)
+					</p>
+					<span
+						class="color-sample"
+						style="background: #0066cc"
+						aria-hidden="true"
+					></span>
+				</div>
+
+				<div class="swatch">
+					<p>
+						<strong>Soft Background Gray‑Blue:</strong>
+						<code>#f5f7fa</code> (page background)
+					</p>
+					<span
+						class="color-sample"
+						style="background: #f5f7fa; border: 1px solid #c9cdd3"
+						aria-hidden="true"
+					></span>
+				</div>
+			</section>
+
+			<section>
+				<h2>Typography</h2>
+				<p>
+					<strong>Font:</strong> Poppins (Google Font)<br />
+					• Headings: Poppins bold<br />
+					• Body text: Poppins regular
+				</p>
+			</section>
+
+			<section>
+				<h2>Wireframes</h2>
+
+				<h3>Mobile Wireframe</h3>
+				<pre>
++------------------------+
+|      Motiv8 Daily      |
+|------------------------|
+|   "Quote of the Day"   |
+|    [Random Quote]      |
+|------------------------|
+| [New Quote Button]     |
+| [Save Favorite]        |
++------------------------+
+      </pre
+				>
+
+				<h3>Desktop Wireframe</h3>
+				<pre>
++------------------------------------------------------+
+|                     Motiv8 Daily                     |
+|------------------------------------------------------|
+|        Quote of the Day   |     Favorites List       |
+|        [Random Quote]     | [Saved quotes appear]    |
+|                           |                          |
+|------------------------------------------------------|
+|   [New Quote]   |   [Save Favorite]                  |
++------------------------------------------------------+
+      </pre
+				>
+			</section>
+		</main>
+
+		<footer>
+			<p>
+				&copy;<span id="currentYear"></span> 😎 Emmanuel Asamoah Adjei 😎 Tema,
+				Ghana
+			</p>
+			<p class="last-modified">
+				Last Modification: <span class="lastModified"></span>
+			</p>
+		</footer>
+	</body>
+</html>

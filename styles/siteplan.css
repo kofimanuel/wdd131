@@ -1,0 +1,111 @@
+/* Typography */
+:root {
+	--blue: #0066cc;
+	--bg: #f5f7fa;
+	--text: #222222;
+	--card: #ffffff;
+	--border: #c9cdd3;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family:
+		"Poppins",
+		system-ui,
+		-apple-system,
+		Segoe UI,
+		Roboto,
+		Arial,
+		sans-serif;
+	background-color: var(--bg);
+	color: var(--text);
+	line-height: 1.65;
+	padding: 20px;
+}
+
+/* Header */
+.header {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 16px;
+}
+
+.logo {
+	width: 40px;
+	height: 40px;
+	background: var(--blue);
+	color: #fff;
+	border-radius: 8px;
+	display: grid;
+	place-items: center;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--blue);
+	margin: 0.2em 0 0.4em;
+}
+
+main {
+	display: grid;
+	gap: 16px;
+}
+
+section {
+	background: var(--card);
+	border: 1px solid var(--border);
+	padding: 16px;
+	border-radius: 10px;
+}
+
+/* Lists */
+ul {
+	margin: 0.4em 0 0.8em 1.2em;
+}
+
+/* Color samples */
+.swatch {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin: 8px 0;
+}
+
+.color-sample {
+	display: inline-block;
+	width: 80px;
+	height: 22px;
+	border: 1px solid #00000022;
+}
+
+/* Wireframes */
+pre {
+	background: #ffffff;
+	padding: 12px;
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	overflow: auto;
+	font-family:
+		ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono",
+		monospace;
+}
+
+/* Footer */
+.footer {
+	margin-top: 16px;
+	color: #4b4f56;
+	font-size: 0.95rem;
+}
