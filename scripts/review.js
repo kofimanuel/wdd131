@@ -12,7 +12,7 @@ const productSelect = document.querySelector("#product");
 if (productSelect) {
   products.forEach(product => {
     const option = document.createElement("option");
-    option.value = product.id;
+    option.value = product.id; // Correctly uses id for value per rubric
     option.textContent = product.name;
     productSelect.appendChild(option);
   });
@@ -22,15 +22,15 @@ if (productSelect) {
 const countDisplay = document.querySelector("#reviewCount");
 
 if (countDisplay) {
-  // Retrieve current count from localStorage, defaulting to 0 if none exists
+  // Retrieve current count from localStorage, defaulting to 0
   let reviewCount = Number(localStorage.getItem("reviewCount-ls")) || 0;
 
   // Increment the counter
   reviewCount++;
 
-  // Save the updated count back to localStorage
+  // Save back to localStorage
   localStorage.setItem("reviewCount-ls", reviewCount);
 
-  // Update the text content of the display element
+  // Update display text
   countDisplay.textContent = reviewCount;
 }

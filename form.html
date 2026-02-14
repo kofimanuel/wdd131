@@ -6,14 +6,14 @@
 		<title>WDD 131 - Product Review Form - Emmanuel Asamoah Adjei</title>
 		<meta
 			name="description"
-			content="WDD131: Dynamic Web Fundamentals - This is a product review form page created to collect feedback on various electrical products. The form includes fields for the user's name, email, product selection, rating, and comments."
+			content="Review and rate our electrical products. Share your experience with the flux capacitor and power laces."
 		/>
 		<meta name="author" content="Emmanuel Asamoah Adjei" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600&display=swap"
 			rel="stylesheet"
 		/>
 
@@ -32,19 +32,26 @@
 			<form method="get" action="review.html">
 				<label for="product">Product Name <span class="req">*</span></label>
 				<select id="product" name="product" required>
-					<option value="" disabled selected>Choose a Product ...</option>
+					<option value="" disabled selected>Select a Product ...</option>
 				</select>
 
 				<fieldset class="rating">
 					<legend>Overall Rating <span class="req">*</span></legend>
 					<div class="stars">
-						<label
-							>☆<input type="radio" name="rating" value="1" required
-						/></label>
-						<label>☆☆<input type="radio" name="rating" value="2" /></label>
-						<label>☆☆☆<input type="radio" name="rating" value="3" /></label>
-						<label>☆☆☆☆<input type="radio" name="rating" value="4" /></label>
-						<label>☆☆☆☆☆<input type="radio" name="rating" value="5" /></label>
+						<input type="radio" id="rating1" name="rating" value="1" required />
+						<label for="rating1">☆</label>
+
+						<input type="radio" id="rating2" name="rating" value="2" required />
+						<label for="rating2">☆☆</label>
+
+						<input type="radio" id="rating3" name="rating" value="3" required />
+						<label for="rating3">☆☆☆</label>
+
+						<input type="radio" id="rating4" name="rating" value="4" required />
+						<label for="rating4">☆☆☆☆</label>
+
+						<input type="radio" id="rating5" name="rating" value="5" required />
+						<label for="rating5">☆☆☆☆☆</label>
 					</div>
 				</fieldset>
 
@@ -59,22 +66,32 @@
 							>(Check all that apply)</em
 						>
 					</legend>
-					<label
-						><input type="checkbox" name="features" value="durability" />
-						Durability</label
-					>
-					<label
-						><input type="checkbox" name="features" value="ease" /> Ease of
-						Use</label
-					>
-					<label
-						><input type="checkbox" name="features" value="performance" />
-						Performance</label
-					>
-					<label
-						><input type="checkbox" name="features" value="design" />
-						Design</label
-					>
+					<input
+						type="checkbox"
+						id="feat-durability"
+						name="features"
+						value="durability"
+					/>
+					<label for="feat-durability">Durability</label>
+
+					<input type="checkbox" id="feat-ease" name="features" value="ease" />
+					<label for="feat-ease">Ease of Use</label>
+
+					<input
+						type="checkbox"
+						id="feat-performance"
+						name="features"
+						value="performance"
+					/>
+					<label for="feat-performance">Performance</label>
+
+					<input
+						type="checkbox"
+						id="feat-design"
+						name="features"
+						value="design"
+					/>
+					<label for="feat-design">Design</label>
 				</fieldset>
 
 				<label for="writtenReview">Written Review (Optional)</label>
