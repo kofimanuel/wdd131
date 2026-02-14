@@ -1,0 +1,110 @@
+:root {
+	--primary-color: #001f3f;
+	--bg-color: #d1cdd4;
+	--text-color: #000;
+	--white: #ffffff;
+	--accent: #eee;
+}
+
+body {
+	font-family: "Libre Franklin", sans-serif;
+	background-color: var(--bg-color);
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: var(--primary-color);
+	color: var(--white);
+	text-align: center;
+	padding: 1rem;
+}
+
+footer {
+	background-color: #001f3f;
+	color: white;
+	text-align: center;
+	padding: 1.5rem;
+	margin-top: 2rem;
+}
+
+.last-modified {
+	color: #ffeb3b;
+	font-size: 0.9rem;
+	margin-top: 10px;
+}
+
+main {
+	max-width: 400px;
+	margin: 20px auto;
+	padding: 0 10px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label,
+legend {
+	font-weight: 600;
+	margin-top: 15px;
+	display: block;
+}
+
+.req {
+	color: #8b0000;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 15px 0;
+}
+
+.stars {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.stars label {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.2rem;
+}
+
+.features label {
+	display: block;
+	font-weight: normal;
+	margin-top: 8px;
+}
+
+input[type="submit"] {
+	background-color: var(--accent);
+	color: var(--text-color);
+	padding: 15px;
+	border: 1px solid #888;
+	border-radius: 4px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin: 25px 0;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #ddd;
+}
