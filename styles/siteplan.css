@@ -76,7 +76,6 @@ ul {
 	margin: 0.4em 0 0.8em 1.2em;
 }
 
-/* Color samples */
 .swatch {
 	display: flex;
 	align-items: center;
@@ -92,15 +91,8 @@ ul {
 }
 
 /* Wireframes */
-pre {
-	background: #ffffff;
-	padding: 12px;
-	border: 1px solid var(--border);
-	border-radius: 8px;
-	overflow: auto;
-	font-family:
-		ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono",
-		monospace;
+img {
+	width: auto;
 }
 
 /* Footer */
