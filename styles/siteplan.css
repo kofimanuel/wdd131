@@ -1,6 +1,6 @@
 /* Typography */
 :root {
-	--blue: #0066cc;
+	--blue: #dc6211;
 	--bg: #f5f7fa;
 	--text: #222222;
 	--card: #ffffff;
@@ -18,14 +18,7 @@ body {
 }
 
 body {
-	font-family:
-		"Poppins",
-		system-ui,
-		-apple-system,
-		Segoe UI,
-		Roboto,
-		Arial,
-		sans-serif;
+	font-family: "Poppins", system-ui, Arial, sans-serif;
 	background-color: var(--bg);
 	color: var(--text);
 	line-height: 1.65;
