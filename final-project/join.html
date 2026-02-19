@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Join our community and share your own motivational quotes."
+		/>
+		<meta name="author" content="Emmanuel Asamoah Adjei" />
+		<link rel="stylesheet" href="./styles/base.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/large.css"
+			media="(min-width: 800px)"
+		/>
+		<title>Motiv8 Daily - Join Us</title>
+		<script src="../scripts/getdates.js" defer></script>
+		<script src="./scripts/main.js" type="module"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo">Motiv8 Daily</div>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="quotes.html">Quotes</a></li>
+					<li><a href="advice.html">Advice</a></li>
+					<li><a href="favorites.html">Favorites</a></li>
+					<li><a href="join.html" class="active">Join</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="hero">
+				<picture>
+					<source
+						srcset="images/hero-large02.webp"
+						media="(min-width: 800px)"
+					/>
+					<img
+						src="images/hero-small02.webp"
+						alt="Hands joined together"
+						width="1200"
+						height="400"
+					/>
+				</picture>
+				<div class="hero-text">
+					<h1>Join the Spark</h1>
+				</div>
+			</section>
+
+			<section class="form-container">
+				<form method="get" action="thanks.html" class="motivation-form">
+					<fieldset>
+						<legend>Your Information</legend>
+						<label for="fname">First Name <span class="req">*</span></label>
+						<input type="text" id="fname" name="fname" required />
+
+						<label for="useremail"
+							>Email Address <span class="req">*</span></label
+						>
+						<input
+							type="email"
+							id="useremail"
+							name="useremail"
+							placeholder="yourname@mail.com"
+							required
+						/>
+					</fieldset>
+
+					<fieldset>
+						<legend>Submit a Quote</legend>
+						<label for="quote-type">Category</label>
+						<select id="quote-type" name="category">
+							<option value="" disabled selected>Select a Category...</option>
+							<option value="success">Success</option>
+							<option value="mindset">Mindset</option>
+							<option value="productivity">Productivity</option>
+						</select>
+
+						<label for="user-quote">Your Motivational Quote</label>
+						<textarea
+							id="user-quote"
+							name="userquote"
+							rows="4"
+							placeholder="Share something uplifting..."
+						></textarea>
+					</fieldset>
+
+					<fieldset>
+						<legend>Newsletter frequency</legend>
+						<div class="radio-group">
+							<input
+								type="radio"
+								id="daily"
+								name="frequency"
+								value="daily"
+								checked
+							/>
+							<label for="daily">Daily Spark</label>
+
+							<input type="radio" id="weekly" name="frequency" value="weekly" />
+							<label for="weekly">Weekly Digest</label>
+						</div>
+					</fieldset>
+
+					<input type="submit" value="Submit to Community" class="submit-btn" />
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<p>
+				&copy;<span id="currentYear"></span> 😎 Emmanuel Asamoah Adjei 😎 Tema,
+				Ghana
+			</p>
+			<p class="last-modified">
+				Last Modification: <span id="lastModified"></span>
+			</p>
+		</footer>
+	</body>
+</html>

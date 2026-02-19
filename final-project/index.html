@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#AFA0A0" />
+		<meta
+			name="description"
+			content="Daily motivational quotes and life advice to keep you focused."
+		/>
+		<meta name="author" content="Emmanuel Asamoah Adjei" />
+		<link rel="stylesheet" href="./styles/base.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/large.css"
+			media="(min-width: 800px)"
+		/>
+		<title>Motiv8 Daily - Home</title>
+
+		<script src="../scripts/getdates.js" defer></script>
+		<script src="./scripts/main.js" type="module"></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo">Motiv8 Daily</div>
+				<ul>
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="quotes.html">Quotes</a></li>
+					<li><a href="advice.html">Advice</a></li>
+					<li><a href="favorites.html">Favorites</a></li>
+					<li><a href="join.html">Join</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="hero">
+				<picture>
+					<source srcset="images/hero-large.webp" media="(min-width: 800px)" />
+					<img
+						src="images/hero-small.webp"
+						alt="Inspirational sunrise landscape"
+						width="1200"
+						height="600"
+					/>
+				</picture>
+				<div class="hero-text">
+					<h1>Find Your Spark</h1>
+					<p>Start your day with purpose and positivity.</p>
+				</div>
+			</section>
+
+			<section id="daily-quote" class="quote-container">
+				<div id="quote-card" class="card">
+					<p id="quote-text">"Loading your daily motivation..."</p>
+					<cite id="quote-author"></cite>
+					<div class="button-group">
+						<button id="new-quote">New Quote</button>
+						<button id="save-favorite">Save</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="info-section">
+				<h2>Why Motiv8?</h2>
+				<div class="grid">
+					<div class="info-item">
+						<img
+							src="images/plant-green-leave.webp"
+							alt="Peaceful forest path"
+							loading="lazy"
+							width="300"
+							height="200"
+						/>
+						<p>Reduce stress with curated life advice.</p>
+					</div>
+					<div class="info-item">
+						<img
+							src="images/water-droplets.webp"
+							alt="Organized minimalist desk"
+							loading="lazy"
+							width="300"
+							height="200"
+						/>
+						<p>Boost focus with daily productivity tips.</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>
+				&copy;<span id="currentYear"></span> 😎 Emmanuel Asamoah Adjei 😎 Tema,
+				Ghana
+			</p>
+			<p class="last-modified">
+				Last Modification: <span id="lastModified"></span>
+			</p>
+			<p><a href="../siteplan.html" target="_blank">Site plan</a></p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Practical life advice and productivity tips for a better you."
+		/>
+		<meta name="author" content="Emmanuel Asamoah Adjei" />
+		<link rel="stylesheet" href="./styles/base.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/large.css"
+			media="(min-width: 800px)"
+		/>
+		<title>Motiv8 Daily - Life Advice</title>
+		<script src="../scripts/getdates.js" defer></script>
+		<script src="./scripts/main.js" type="module"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo">Motiv8 Daily</div>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="quotes.html">Quotes</a></li>
+					<li><a href="advice.html" class="active">Advice</a></li>
+					<li><a href="favorites.html">Favorites</a></li>
+					<li><a href="join.html">Join</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="hero">
+				<picture>
+					<source
+						srcset="images/hero-advice-large.webp"
+						media="(min-width: 800px)"
+					/>
+					<img
+						src="images/hero-advice-small.webp"
+						alt="Person hiking"
+						width="1200"
+						height="400"
+					/>
+				</picture>
+				<div class="hero-text">
+					<h1>Step by Step</h1>
+				</div>
+			</section>
+
+			<section class="advice-section">
+				<div class="advice-card">
+					<img
+						src="images/water-droplets.webp"
+						alt="Glass of water"
+						loading="lazy"
+						width="300"
+						height="200"
+					/>
+					<h3>Stay Hydrated</h3>
+					<p>A hydrated brain is a focused brain. Drink 8 glasses a day.</p>
+				</div>
+				<div class="advice-card">
+					<img
+						src="images/sunlit-desk02.webp"
+						alt="Clean desk"
+						loading="lazy"
+						width="300"
+						height="200"
+					/>
+					<h3>Clear Space, Clear Mind</h3>
+					<p>Spend 5 minutes decluttering your desk before you start work.</p>
+				</div>
+				<div class="advice-card">
+					<img
+						src="images/sunlit-desk.webp"
+						alt="Forest trees"
+						loading="lazy"
+						width="300"
+						height="200"
+					/>
+					<h3>Nature Breaks</h3>
+					<p>
+						A 10-minute walk outside can reset your stress levels instantly.
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>
+				&copy;<span id="currentYear"></span> 😎 Emmanuel Asamoah Adjei 😎 Tema,
+				Ghana
+			</p>
+			<p class="last-modified">
+				Last Modification: <span id="lastModified"></span>
+			</p>
+			<p><a href="../siteplan.html" target="_blank">Site plan</a></p>
+		</footer>
+	</body>
+</html>
