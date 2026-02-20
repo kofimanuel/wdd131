@@ -1,4 +1,4 @@
-// 1. Quotes Object Array
+// Quotes Object Array
 const quotes = [
   { id: 1, text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
   { id: 2, text: "Believe you can and you're halfway there.", author: "Theodore Roosevelt" },
@@ -63,6 +63,20 @@ const fullQuotes = [
 
 const quotesGrid = document.querySelector("#quotes-grid");
 const filterButtons = document.querySelectorAll(".filter-btn");
+
+if (quotesGrid && filterButtons.length > 0) {
+  // Adding listenners to the buttons
+  filterButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      // Removing active class from others, add to this one
+      filterButtons.forEach(b => b.classList.remove("active-filter"));
+      btn.classList.add("active-filter");
+
+      // Filter logic
+      displayQuotes(btn.dataset.category);
+    });
+  });
+}
 
 function displayQuotes(filter = "all") {
   if (!quotesGrid) return;
