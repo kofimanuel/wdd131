@@ -49,6 +49,10 @@ nav a.active {
 	border-bottom: 2px solid var(--white);
 }
 
+nav a:hover {
+	color: yellowgreen;
+}
+
 h1,
 h2 {
 	text-align: center;
