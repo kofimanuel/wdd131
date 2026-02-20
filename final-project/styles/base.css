@@ -10,7 +10,6 @@
 body {
 	font-family: "Poppins", sans-serif;
 	margin: 0 auto;
-	width: 90%;
 	background-color: var(--light);
 	color: var(--dark);
 	line-height: 1.6;
