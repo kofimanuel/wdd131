@@ -1,26 +1,22 @@
 @media (min-width: 800px) {
 	body {
 		margin: 0 auto;
-		width: 90%;
+		width: 100%;
 	}
 
 	nav {
-		max-width: 1200px;
-		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 
 	nav ul {
 		gap: 40px;
 	}
 
-	nav a {
-		font-size: 1.1rem;
-	}
-
-	/* Desktop Grid layouts */
+	/* Grid Layouts */
 	.info-section .grid,
 	.grid-container,
 	.advice-section {
@@ -33,18 +29,12 @@
 		align-items: start;
 	}
 
-	.hero-text h1 {
-		font-size: 3.5rem;
-	}
-
 	.info-item img {
 		height: 300px;
 	}
 
-	.card:hover,
-	.info-item:hover {
-		transform: translateY(-5px);
-		transition: transform 0.3s ease;
-		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+	/* Desktop Form Adjustment */
+	.form-container {
+		max-width: 700px;
 	}
 }
